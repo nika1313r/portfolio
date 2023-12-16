@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.header {
+    height: 10vh;
+    width: 100vw;
+    background: #0000004b;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 4rem;
+    font-family: 'nosifer', sans-serif;
+    font-weight: 800;
+    color: #FFF;
+    margin-left: 50px;
+}
+
+.nav-bar {
+    margin-right: 50px;
+}
+
+.list-container {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.element {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #FFF;
+    transition: 0.3s;
+}
+
+.element:hover {
+    color: #ff0000;
+}
+
+#section1,
+#section2,
+#section3,
+#section4 {
+    width: 100vw;
+    height: 100vh;
+}
+
+#section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/nika.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: url(nika.jpg);
+    -webkit-background-clip: text;
+    background-clip: text; */
+}
+
+.welcome {
+    color: #e205ff;
+    font-weight: 700;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.hello {
+    font-size: 5rem;
+}
+
+.name {
+    font-size: 6rem;
+}
+
+#section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/nikA12.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section2-wrapper {
+    width: 60%;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.my-info {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Metal Mania", sans-serif;
+}
+
+#section3 {
+    background-image: url(img/nika2354.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section4 {
+    background-image: url(img/nik23.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact,
+.mesig {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.479);
+    flex-direction: column;
+}
+
+.contact div{
+    height: 50%;
+}
+.text{
+    color: #fff;
+}
+
+.text1{
+    font-size: 3rem;
+}
+
+.text2{
+    font-size: 2rem;
+}
+
+.mesig {
+    align-items: flex-start;
+}
+
+
+.input-field,
+textarea,
+button {
+    border: 3px solid green;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.input-field:focus,
+.message:focus,
+.send-button:focus {
+    outline: transparent;
+    border-color: rgb(255, 0, 0)
+}
+
+.message {
+    resize: none;
+}
+
+button {
+    cursor: pointer;
+}
