@@ -138,8 +138,22 @@ body {
 }
 
 .rotate-box{
+    position: relative;
     width: 50%;
     height: 50%;
+}
+
+.button,
+.icon{
+    position: absolute;
+}
+
+.icon{
+    z-index: 1;
+}
+
+.button{
+    z-index: 2;
 }
 
 #section4 {
