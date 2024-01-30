@@ -27,6 +27,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 99;
 }
 
 .logo {
@@ -60,10 +61,17 @@ body {
     color: #ff0000;
 }
 
+.res {
+    display: none;
+}
+
 #section1,
 #section2,
 #section3,
 #section4 {
+    position: sticky;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
 }
@@ -84,9 +92,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background-image: url(nika.jpg);
-    -webkit-background-clip: text;
-    background-clip: text; */
 }
 
 .welcome {
@@ -137,22 +142,67 @@ body {
 
 }
 
-.rotate-box{
+.section3-wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skills {
+    height: 250px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #80240054;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    font-size: 5rem;
+    font-family: 'Lemon', serif;
+    flex-grow: 1;
+}
+
+.x1 {
+    color: #d55510;
+}
+
+.x2 {
+    color: #105ee5;
+}
+
+.x3 {
+    color: #eaed0c;
+}
+
+.rotate-box {
     position: relative;
     width: 50%;
     height: 50%;
 }
 
 .button,
-.icon{
+.icon {
     position: absolute;
 }
 
-.icon{
+.icon {
     z-index: 1;
 }
 
-.button{
+.button {
     z-index: 2;
 }
 
@@ -162,8 +212,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
 }
 
 .contact,
@@ -177,18 +227,19 @@ body {
     flex-direction: column;
 }
 
-.contact div{
+.contact div {
     height: 50%;
 }
-.text{
+
+.text {
     color: #fff;
 }
 
-.text1{
+.text1 {
     font-size: 3rem;
 }
 
-.text2{
+.text2 {
     font-size: 2rem;
 }
 
@@ -222,4 +273,66 @@ button {
 
 button {
     cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        right: -50%;
+        transform: translateX(50%);
+        width: 50%;
+        height: 100vh;
+        background: #2f00ff88;
+        backdrop-filter: blur(20px);
+        margin: 0;
+        transition: 0.5s;
+    }
+
+    .nav-bar.active {
+        right: 0;
+        transform: translateX(0);
+    }
+
+    .list-container {
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+    }
+
+    .res {
+        display: block;
+        font-size: 2rem;
+        color: #e205ff;
+    }
+
+    .res:active {
+        color: #fff;
+    }
+
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 50px;
+    }
+
+    .menu {
+        margin-right: 50px;
+    }
+
+    .section4 {
+        flex-direction: column;
+    }
+
+    .contact,
+    .mesig {
+        width: 100%;
+        height: 50%;
+    }
+
+    #message {
+        width: 90%;
+    }
 }
