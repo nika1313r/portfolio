@@ -28,7 +28,7 @@
 
     <section id="section1">
         <div class="wrapper">
-            <h1 class="welcome hello">wellcome</h1>
+            <h1 class="welcome hello">Welcome</h1>
             <h1 class="welcome name">My name is nika</h1>
         </div>
 
@@ -53,20 +53,26 @@
         </div>
     </section>
     <section id="section4">
-        <div class="contact">
-            <div>
-                <h1 class="text text1">Contact Me</h1>
-                <h1 class="text text2"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
-                    nikoloz13@kopitnati.net</h1>
+        <div class="section4-wrapper">
+            <div class="contact">
+                <div>
+                    <h1 class="text text1">Contact Me</h1>
+                    <h1 class="text text2"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                        nikoloz13@kopitnati.net</h1>
+                </div>
             </div>
+            <form class="mesig" name="submit-to-google-sheet">
+                <div>
+                    <input class="input-field" type="text" id="name" name="Name" placeholder="Enter your name"
+                        required><br>
+                    <input class="input-field" type="email" id="email" name="Email" placeholder="Enter your email"
+                        required><br>
+                    <textarea class="message" id="message" name="Message" placeholder="Enter your message" rows="5"
+                        cols="40" required></textarea><br>
+                    <button class="send-button" id="gagimarjos" type="submit">Send</button>
+                </div>
+            </form>
         </div>
-        <form class="mesig" name="submit-to-google-sheet">
-            <input class="input-field" type="text" id="name" name="Name" placeholder="Enter your name" required><br>
-            <input class="input-field" type="email" id="email" name="Email" placeholder="Enter your email" required><br>
-            <textarea class="message" id="message" name="Message" placeholder="Enter your message" rows="5" cols="40"
-                required></textarea><br>
-            <button class="send-button" id="gagimarjos" type="submit">Send</button>
-        </form>
     </section>
     <script src="script.js"></script>
     <script src="contact.js"></script>

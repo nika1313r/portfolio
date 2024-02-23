@@ -54,6 +54,7 @@ body {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: #FFF;
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -210,10 +211,16 @@ body {
     background-image: url(img/nik23.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;   
+}
+
+.section4-wrapper {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background: #0000007a;
 }
 
 .contact,
@@ -223,13 +230,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.479);
     flex-direction: column;
 }
 
-.contact div {
+.contact div,
+.mesig div{ 
     height: 50%;
 }
+
 
 .text {
     color: #fff;
@@ -243,39 +251,43 @@ body {
     font-size: 2rem;
 }
 
-.mesig {
-    align-items: flex-start;
-}
-
-
 .input-field,
-textarea,
-button {
+.message,
+.send-button {
     border: 3px solid green;
     border-radius: 10px;
     background-color: rgb(0, 0, 0);
     color: white;
     padding: 10px;
-    margin: 10px;
     font-size: 20px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.input-field {
+    width: 60%;
+}
+
+.send-button {
+    width: 30%;
 }
 
 .input-field:focus,
 .message:focus,
 .send-button:focus {
     outline: transparent;
-    border-color: rgb(255, 0, 0)
+    border-color: #ff0000
 }
 
 .message {
     resize: none;
 }
 
-button {
+.send-button {
     cursor: pointer;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
     .nav-bar {
         position: fixed;
         top: 0;
@@ -322,17 +334,108 @@ button {
         margin-right: 50px;
     }
 
-    .section4 {
+    .section4-wrapper {
         flex-direction: column;
     }
 
     .contact,
     .mesig {
         width: 100%;
-        height: 50%;
     }
 
-    #message {
-        width: 90%;
+    .contact {
+        height: 50%;
+        justify-content: end;
+    }
+
+    .mesig {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .input-field,
+    .message,
+    .send-button {
+        width: max(70vw, 500px);
+        font-size: 15px;
+    }
+    
+    .message {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        margin-left: 30px;
+        font-size: 3rem;
+    }
+
+    .menu {
+        margin-right: 30px;
+    }
+
+    .my-info {
+        font-size: 1.5rem;
+    }
+
+    .skills {
+        height: 200px;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .logo {
+        margin-left: 15px;
+        font-size: 2rem;
+    }
+
+    .menu {
+        margin-right: 15px;
+    }
+
+    .nav-bar {
+        width: 100%;
+    }
+
+    .my-info {
+        font-size: 1rem;
+    }
+
+    .skills {
+        height: 150px;
+        font-size: 3rem;
+    }
+
+    .text1 {
+        font-size: 2.5rem;
+    }
+
+    .text2 {
+        font-size: 1rem;
+    }
+
+    .mesig {
+        width: 100%;
+        align-items: center;
+    }
+
+    .mesig div {
+        height: 300px;
+    }
+
+    .input-field,
+    .message,
+    .send-button {
+        width: max(70vw, 250px);
+        font-size: 15px;
+        margin: 1px;
+    }
+    
+    .message {
+        height: 200px;
     }
 }
