@@ -401,6 +401,14 @@ body {
         width: 100%;
     }
 
+    .name {
+        font-size: 2rem;
+    }
+
+    .welcome {
+        font-size: 2.5rem;
+    }
+
     .my-info {
         font-size: 1rem;
     }
